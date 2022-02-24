@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Page Transition</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/dist/barba.umd.min.js"></script>
+  <script src="js/dist/anime.min.js"></script>
+</head>
+<body data-barba="wrapper">
+  
+  <!-- loader -->
+  <div id="pageLoaderContainer"></div>
+
+  <!-- navigation menu -->
+  <div id="navigationMenu">
+    <div class="container _center-in-page_">
+      <p class="logo">LOGO</p>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </div>
+
+  <main data-barba="container" data-barba-namespace="home" id="pageContent">
+
+    <section id="landingSection">
+      <div class="sectionContainer _center-in-page_">
+
+        <h1 class="pageTitle">Home Page</h1>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <script defer src="js/app.js"></script>
+</body>
+</html>
